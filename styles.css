@@ -1,0 +1,11 @@
+
+/* || GENERAL STYLES */
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./fonts/jurassicpark-bl48-webfont.woff2') format('woff2'),
+         url('./fonts/jurassicpark-bl48-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
