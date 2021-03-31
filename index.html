@@ -12,13 +12,32 @@
         <div class="intro-wrapper">
             <div class="intro-text-container">
                 <h1 class="main-title">Dinosaurs</h1>
-                <h2 class="sub-title">A Project For Udacity Intermediate JavScript</h2>
+                <h2 class="sub-title">A Project For Udacity Intermediate JavaScript</h2>
                 <div class="underline"></div>
                 <p class="text-normal">See how you compare to the giants that roamed Earth between 245 and 65 million years ago. <br><br>
                 Data sourced from <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>. All numbers are approximations.</p>
             </div>
             <div class="form-wrapper">
-                <form action=""></form>
+                <form>
+                    <label for="u-name">Your Name</label>
+                    <input type="text" id="u-name">
+                    <p class="text-normal">Units</p>
+                    <label for="imperial">Imperial</label>
+                    <input type="radio" id="imperial">
+                    <label for="metric">Metric</label>
+                    <input type="radio" id="metric">
+                    <label for="height">Height</label>
+                    <input type="number" id="height">
+                    <label for="weight">Weight</label>
+                    <input type="number" id="weight">
+                    <label for="weight">Diet</label>
+                    <select id="diet" name="dier">
+                        <option value="herbivore">Herbivore</option>
+                        <option value="carnivore">Carnivore</option>
+                        <option value="omnivore">Omnivore</option>
+                    </select>
+                    <button>Compare me!</button>
+                </form>
             </div>
         </div>
     </div>
