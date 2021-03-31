@@ -29,30 +29,54 @@
           </p>
         </div>
         <div class="form-wrapper">
-          <form>
+          <form class="form-block">
             <label class="form-text" for="u-name">Your Name</label>
-            <input type="text" id="u-name" />
+            <input type="text" id="u-name" placeholder="Full name please" />
             <p class="form-text">Units</p>
             <div class="radio-btn-container">
-              <input type="radio" id="imperial" />
+              <input class="imperial-btn" type="radio" id="imperial" name="units" />
               <label class="radio-text" for="imperial">Imperial</label>
-              <input type="radio" id="metric" />
+              <input class="metric-btn" type="radio" id="metric" name="units" checked="true" />
               <label class="radio-text" for="metric">Metric</label>
             </div>
-            <label class="form-text" for="height">Height</label>
-            <input type="number" id="height" />
+            <div class="metric-height-wrapper">
+              <label class="form-text" for="height">Height</label>
+              <input
+                type="number"
+                id="height"
+                placeholder="Your height in cm"
+              />
+            </div>
+            <div class="imperial-height-wrapper">
+              <label class="form-text" for="feet">Height</label>
+              <div class="inperial-units-wrapper">
+                <input
+                  class="feet-input"                
+                  type="number"
+                  id="feet"
+                  placeholder="Your height in feet"
+                />
+                <input
+                  class="inch-input" 
+                  type="number"
+                  id="inches"
+                  placeholder="Those extra inches"
+                />
+              </div>
+            </div>
             <label class="form-text" for="weight">Weight</label>
-            <input type="number" id="weight" />
+            <input class="weight-input" type="number" id="weight" placeholder="Your weight in kg" />
             <label class="form-text" for="weight">Diet</label>
             <select id="diet" name="dier">
               <option value="herbivore">Herbivore</option>
               <option value="carnivore">Carnivore</option>
               <option value="omnivore">Omnivore</option>
             </select>
-            <button>Compare me</button>
+            <button id="compare">Compare me</button>
           </form>
         </div>
       </div>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>

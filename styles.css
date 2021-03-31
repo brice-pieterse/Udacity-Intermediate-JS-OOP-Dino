@@ -75,10 +75,14 @@ body {
     background-color: #1b1b1b;
 }
 
+
+
+/* || FORM STYLES */
+
 .form-wrapper {
-    padding: 30px 30px 30px 30px;
+    padding: 10px 30px 30px 30px;
     background-color: rgb(247, 247, 242);
-    width: 45%;
+    width: 475px;
     box-shadow: 1px 1px 10px rgb(0,0,0,0.1);
     border-radius: 10px;
 }
@@ -103,12 +107,12 @@ form {
 input, select {
     height: 40px;
     border-style: none;
-    box-shadow: 1px 1px 10px rgb(0,0,0,0.1);
     padding-left: 15px;
     font-size: 16px;
     font-weight: 500;
     font-family: sans-serif;
     color: #1b1b1b;
+    box-shadow: 1px 1px 10px rgb(0,0,0,0.1);
 }
 
 .radio-btn-container input {
@@ -116,6 +120,7 @@ input, select {
     bottom: 1px;
     margin-left: 0;
     margin-right: 7px;
+    box-shadow: none;
 }
 
 button {
@@ -125,7 +130,9 @@ button {
     font-size: 16px;
     font-weight: 600;
     border-style: none;
+    border-radius: 4px;
     background-color: rgb(204, 95, 95, 0.75);
+    box-shadow: 1px 1px 5px rgb(204, 95, 95, 0.5);
     color: white;
     cursor: pointer;
 }
@@ -134,6 +141,33 @@ button {
 button:hover {
     background-color: rgb(204, 95, 95);
 }
+
+.imperial-height-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    display: none;
+}
+
+.imperial-units-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    max-width: 200px;
+}
+
+.metric-height-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.feet-input, .inch-input {
+    max-width: 50%;
+    margin-right: 15px;
+}
+
 
 
 /* || TYPOGRAPHY STYLES */
@@ -164,8 +198,8 @@ button:hover {
 
 .form-text {
     margin-top: 20px;
-    margin-bottom: 7px;
-    font-size: 14px;
+    margin-bottom: 10px;
+    font-size: 13px;
     font-weight: 600;
     font-family: sans-serif;
     color: #1b1b1b;
