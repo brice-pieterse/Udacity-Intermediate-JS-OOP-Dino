@@ -62,7 +62,7 @@ body {
 }
 
 .intro-text-container {
-    width: 50%;
+    width: 45%;
     margin-right: 10%;
     padding-top: 40px;
 }
@@ -76,10 +76,9 @@ body {
 }
 
 .form-wrapper {
-    padding: 40px 30px 40px 30px;
-    background-color: white;
-    width: 40%;
-    min-height: 200px;
+    padding: 30px 30px 30px 30px;
+    background-color: rgb(247, 247, 242);
+    width: 45%;
     box-shadow: 1px 1px 10px rgb(0,0,0,0.1);
     border-radius: 10px;
 }
@@ -87,7 +86,53 @@ body {
 form {
     display: flex;
     flex-direction: column;
+}
 
+.radio-btn-container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 7px 15px 7px 15px;
+    box-shadow: 1px 1px 10px rgb(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+input, select {
+    height: 40px;
+    border-style: none;
+    box-shadow: 1px 1px 10px rgb(0,0,0,0.1);
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #1b1b1b;
+}
+
+.radio-btn-container input {
+    position: relative;
+    bottom: 1px;
+    margin-left: 0;
+    margin-right: 7px;
+}
+
+button {
+    margin-top: 20px;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-style: none;
+    background-color: rgb(204, 95, 95, 0.75);
+    color: white;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: rgb(204, 95, 95);
 }
 
 
@@ -117,6 +162,24 @@ form {
     margin:0;
 }
 
+.form-text {
+    margin-top: 20px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #1b1b1b;
+    opacity: 0.5;
+}
+
+.radio-text {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 34px;
+    margin-right: 20%;
+}
+
 a {
-    color: rgb(114, 83, 4);
+    color: rgb(204, 95, 95);
 }
