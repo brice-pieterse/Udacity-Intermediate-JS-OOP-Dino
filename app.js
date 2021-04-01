@@ -16,6 +16,16 @@ const weightInput = document.querySelector(".weight-input");
 const nameInput = document.querySelector(".name-input");
 const dietInput = document.querySelector(".diet-input");
 
+let human;
+
+class Human {
+    constructor(name, diet, height, weight){
+        this.name = name;
+        this.diet = diet;
+        this.height = height;
+        this.weight = weight;
+    }
+}
 
 
 //form-in animation
@@ -123,8 +133,44 @@ function resetForm(){
 }
 
 
+// convert from imperial to metric height if needed
+function convertUnits(){
+    if (imperialBtn.checked){
+        const inches = heightFeetInput.value * 12 + heightInchInput.value;
+        const weight = weightInput.value
+        return {
+            height: inches * 2.54,
+            weight: weight * 0.543
+        }
+    }
+}
+
+
+function randomIntFromInterval(min, max) { 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+
+// functional mixin for creating dinos
+const createDino = function(obj){
+    return Object.assign({}, obj, {
+        getDietFact: function () {
+            if (this.diet === human.diet){
+                return `You are a ${human.diet} and ${this.name} is too!`
+            }
+        },
+        getWeightFact: function(){},
+        getHeightFact: function(){}
+    })
+}
+
+// mixin targets for different dinosaurs
+
+
 compareBtn.addEventListener("click", () => {
     if (formCheck()){
+        let humanUnits = convertUnits();
+        human = new Human(nameInput.value, dietInput.value, humanUnits.height, humanUnits.weight)
         closeForm();
     }
 });
