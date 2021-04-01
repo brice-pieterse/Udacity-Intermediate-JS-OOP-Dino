@@ -30,8 +30,8 @@
         </div>
         <div class="form-wrapper">
           <form class="form-block">
-            <label class="form-text" for="u-name">Your Name</label>
-            <input type="text" id="u-name" placeholder="Full name please" />
+            <label class="form-text name-label" for="u-name">Your Name</label>
+            <input class="name-input" type="text" id="u-name" placeholder="Full name please" />
             <p class="form-text">Units</p>
             <div class="radio-btn-container">
               <input class="imperial-btn" type="radio" id="imperial" name="units" />
@@ -42,6 +42,7 @@
             <div class="metric-height-wrapper">
               <label class="form-text" for="height">Height</label>
               <input
+                class="heightCmInput"
                 type="number"
                 id="height"
                 placeholder="Your height in cm"
@@ -51,12 +52,14 @@
               <label class="form-text" for="feet">Height</label>
               <div class="inperial-units-wrapper">
                 <input
+                  class="heightFeetInput"
                   class="feet-input"                
                   type="number"
                   id="feet"
                   placeholder="Your height in feet"
                 />
                 <input
+                  class="heightInchInput"
                   class="inch-input" 
                   type="number"
                   id="inches"
@@ -72,7 +75,7 @@
               <option value="carnivore">Carnivore</option>
               <option value="omnivore">Omnivore</option>
             </select>
-            <button id="compare">Compare me</button>
+            <button id="compare" type="button">Compare me</button>
           </form>
         </div>
       </div>
