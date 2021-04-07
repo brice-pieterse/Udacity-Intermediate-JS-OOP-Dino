@@ -13,6 +13,26 @@
         class="wallpaper"
         src="./images/dino-back.svg"
       />
+      <div class="grid-wrapper">
+        <div class="grid-header">
+          <h2 class="sub-title center padding-bottom">How do you compare?</h2>
+          <h1 class="main-title center">Dinosaurs</h1>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item dino-1"></div>
+          <div class="grid-item dino-2 mid"></div>
+          <div class="grid-item dino-3"></div>
+          <div class="grid-item dino-4"></div>
+          <div class="grid-item human mid"></div>
+          <div class="grid-item dino-6"></div>
+          <div class="grid-item dino-7"></div>
+          <div class="grid-item dino-8 mid"></div>
+          <div class="grid-item bird"></div>
+        </div>
+        <div class="grid-footer">
+          <button class="new-form">Go Again</button>
+        </div>
+      </div>
       <div class="intro-wrapper">
         <div class="intro-text-container">
           <h1 class="main-title">Dinosaurs</h1>
@@ -31,12 +51,28 @@
         <div class="form-wrapper">
           <form class="form-block">
             <label class="form-text name-label" for="u-name">Your Name</label>
-            <input class="name-input" type="text" id="u-name" placeholder="Full name please" />
+            <input
+              class="name-input"
+              type="text"
+              id="u-name"
+              placeholder="Full name please"
+            />
             <p class="form-text">Units</p>
             <div class="radio-btn-container">
-              <input class="imperial-btn" type="radio" id="imperial" name="units" />
+              <input
+                class="imperial-btn"
+                type="radio"
+                id="imperial"
+                name="units"
+              />
               <label class="radio-text" for="imperial">Imperial</label>
-              <input class="metric-btn" type="radio" id="metric" name="units" checked="true" />
+              <input
+                class="metric-btn"
+                type="radio"
+                id="metric"
+                name="units"
+                checked="true"
+              />
               <label class="radio-text" for="metric">Metric</label>
             </div>
             <div class="metric-height-wrapper">
@@ -53,14 +89,14 @@
               <div class="inperial-units-wrapper">
                 <input
                   class="heightFeetInput"
-                  class="feet-input"                
+                  class="feet-input"
                   type="number"
                   id="feet"
                   placeholder="Your height in feet"
                 />
                 <input
                   class="heightInchInput"
-                  class="inch-input" 
+                  class="inch-input"
                   type="number"
                   id="inches"
                   placeholder="Those extra inches"
@@ -68,7 +104,12 @@
               </div>
             </div>
             <label class="form-text" for="weight">Weight</label>
-            <input class="weight-input" type="number" id="weight" placeholder="Your weight in kg" />
+            <input
+              class="weight-input"
+              type="number"
+              id="weight"
+              placeholder="Your weight in kg"
+            />
             <label class="form-text" for="weight">Diet</label>
             <select id="diet" name="dier">
               <option value="herbivore">Herbivore</option>
