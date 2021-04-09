@@ -12,4 +12,4 @@ Enter your name, height, weight and diet type (herbivore, omnivore or carnivore)
 
 When you are finished entering the data, press the Compare Me! button to see yourself compared to dinosaurs, and a modern-day friend.
 
-If you want to try again, you may click the Go Again button.
+If you want to try again, you may click the Go Again button!
