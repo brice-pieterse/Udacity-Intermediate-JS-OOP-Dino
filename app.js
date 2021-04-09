@@ -208,7 +208,6 @@ function resetForm(){
 function convertUnits(){
     if (imperialBtn.checked){
         const inches = parseInt(heightFeetInput.value * 12) + parseInt(heightInchInput.value);
-        console.log(inches)
         const weight = weightInput.value
         return {
             height: inches * 2.54,
@@ -341,12 +340,9 @@ function createGrid(dinos){
     }
 }
 
-
-
 compareBtn.addEventListener("click", () => {
     if (formCheck()){
         let humanUnits = convertUnits();
-        console.log(humanUnits)
         human = new Human(nameInput.value, dietInput.value, humanUnits.height, humanUnits.weight);
         closeForm();
         grid.style.display = "flex"
